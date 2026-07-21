@@ -13,7 +13,7 @@
 <body>
   <div class="app">
 
-    <!-- ===================== HOME / LOBBY ===================== -->
+    <!-- ===================== STEP 1: CHARACTER PACKS (MAIN MENU) ===================== -->
     <section id="screen-home" class="screen active">
       <div class="card-panel">
         <div class="logo">
@@ -23,24 +23,50 @@
         </div>
 
         <div class="field">
-          <label for="playerCount">How many players?</label>
+          <label>Choose character packs</label>
+          <div id="categoryList" class="category-list"><!-- toggles injected by game.js --></div>
+          <p class="hint" id="poolHint">Turn packs on or off to choose which characters can appear.</p>
+        </div>
+
+        <button id="toPlayersBtn" class="primary-btn">Continue</button>
+        <button id="howToBtn" class="link-btn">How to play</button>
+      </div>
+    </section>
+
+    <!-- ===================== STEP 2: PLAYER COUNT ===================== -->
+    <section id="screen-players" class="screen">
+      <div class="card-panel">
+        <div class="logo">
+          <span class="logo-emoji">👥</span>
+          <h1>Players</h1>
+          <p class="tagline">How many are playing?</p>
+        </div>
+
+        <div class="field">
           <div class="stepper">
             <button type="button" id="minusBtn" class="step-btn" aria-label="Fewer players">−</button>
             <input id="playerCount" type="number" min="3" max="20" value="5" inputmode="numeric" />
             <button type="button" id="plusBtn" class="step-btn" aria-label="More players">+</button>
           </div>
-          <p class="hint">Best with 3–12+ players. Pass one phone around.</p>
+          <p class="hint">Best with 3–12+ players. You'll pass one phone around.</p>
+        </div>
+
+        <div class="field">
+          <label>Spy chance per player: <span id="spyProbValue">30%</span></label>
+          <input id="spyProb" class="slider" type="range" min="0" max="100" step="5" value="30" />
+          <p class="hint">Each player independently has this chance of being a spy. Higher = more spies.</p>
         </div>
 
         <button id="startBtn" class="primary-btn">Start Game</button>
-
-        <button id="howToBtn" class="link-btn">How to play</button>
+        <button id="backToPacksBtn" class="link-btn">← Back to character packs</button>
       </div>
     </section>
 
     <!-- ===================== REVEAL ===================== -->
     <section id="screen-reveal" class="screen">
       <div class="reveal-wrap">
+        <button class="exit-btn" data-exit>✕ Menu</button>
+
         <p class="pass-label" id="passLabel">Pass the phone to Player 1</p>
 
         <div id="flipCard" class="flip-card">
@@ -64,11 +90,12 @@
     <!-- ===================== DISCUSSION ===================== -->
     <section id="screen-discuss" class="screen">
       <div class="card-panel discuss-panel">
+        <button class="exit-btn" data-exit>✕ Menu</button>
         <span class="discuss-emoji">💬</span>
         <h2>Everyone has seen their role.</h2>
         <p class="discuss-text">Start discussing! Ask each other questions about the character. Spies — blend in. Everyone else — expose the spies.</p>
         <button id="newRoundBtn" class="primary-btn">New Round</button>
-        <button id="homeBtn" class="link-btn">Change player count</button>
+        <button id="homeBtn" class="link-btn">Exit to main menu</button>
       </div>
     </section>
 
@@ -77,13 +104,14 @@
       <div class="modal">
         <h3>How to play</h3>
         <ol>
+          <li>Choose which <strong>character packs</strong> to include, then tap Continue.</li>
           <li>Pick the number of players and tap <strong>Start Game</strong>.</li>
-          <li>The game secretly picks one famous character. Most players get that character — some randomly become a <strong>SPY</strong>.</li>
+          <li>The game secretly picks one character. Most players get that character — some randomly become a <strong>SPY</strong>.</li>
           <li>Pass the phone around. Each player privately reveals their card, then hides it.</li>
           <li>Spies only see the word <strong>SPY</strong> — they don't know the character!</li>
           <li>Discuss and ask questions to find the spies. Spies try to blend in.</li>
         </ol>
-        <p class="modal-note">There's no fixed number of spies — a round might have none, one, or many. Every player has a 30% chance of being a spy.</p>
+        <p class="modal-note">There's no fixed number of spies — a round might have none, one, or many. Each player has a 30% chance of being a spy. You can tap ✕ Menu anytime to start over.</p>
         <button id="closeModalBtn" class="primary-btn">Got it</button>
       </div>
     </div>

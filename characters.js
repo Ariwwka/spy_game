@@ -1,23 +1,143 @@
-// Fallback character list, used when characters.json cannot be fetched
+// Fallback character data, used when characters.json cannot be fetched
 // (e.g. when opening index.html directly from disk with file://).
-// The canonical, editable list lives in characters.json — keep them in sync,
+// The canonical, editable data lives in characters.json — keep them in sync,
 // or just edit characters.json and host via a server / GitHub Pages.
-window.FALLBACK_CHARACTERS = [
-  "Spider-Man", "Batman", "Superman", "Iron Man", "Captain America",
-  "Wonder Woman", "Thor", "Hulk", "Black Panther", "Deadpool",
-  "Harry Potter", "Hermione Granger", "Dumbledore", "Voldemort", "Gandalf",
-  "Frodo Baggins", "Darth Vader", "Luke Skywalker", "Yoda", "Elsa",
-  "Anna", "Woody", "Buzz Lightyear", "Shrek", "Mickey Mouse",
-  "SpongeBob SquarePants", "Homer Simpson", "Mario", "Luigi", "Pikachu",
-  "Sonic the Hedgehog", "Kratos", "Master Chief", "Lara Croft", "Link",
-  "Sherlock Holmes", "James Bond", "Indiana Jones", "Jack Sparrow", "The Joker",
-  "Daenerys Targaryen", "Walter White", "Forrest Gump", "Rocky Balboa",
-  "Willy Wonka", "Winnie the Pooh", "Scooby-Doo", "Bugs Bunny",
-  "Lionel Messi", "Cristiano Ronaldo", "LeBron James", "Serena Williams",
-  "Usain Bolt", "Michael Jordan", "Muhammad Ali", "Roger Federer",
-  "Albert Einstein", "Isaac Newton", "Leonardo da Vinci", "Nikola Tesla",
-  "Marie Curie", "Cleopatra", "Napoleon Bonaparte", "William Shakespeare",
-  "Michael Jackson", "Beyoncé", "Taylor Swift", "Elvis Presley",
-  "Freddie Mercury", "Bob Marley", "Adele", "Ed Sheeran",
-  "Oprah Winfrey", "Mr. Bean"
+window.FALLBACK_CATEGORIES = [
+  {
+    id: "films",
+    name: "🎬 Фильмы (Films)",
+    characters: [
+      "Джеймс Бонд", "Джек Воробей", "Терминатор", "Индиана Джонс", "Мистер Бин",
+      "Вилли Вонка", "Годзилла", "Кинг-Конг", "Зорро", "Робокоп",
+      "Робин Гуд", "Шерлок Холмс", "Доктор Ватсон", "Маска", "Гринч",
+      "Круэлла", "Малефисента", "Каспер", "Битлджус", "Агент Джей (Люди в чёрном)",
+      "Агент Кей (Люди в чёрном)", "Оптимус Прайм", "Бамблби", "Остин Пауэрс", "Эйс Вентура",
+      "Рокки Бальбоа", "Чарли Чаплин", "Пеннивайз", "Призрачное лицо (Ghostface)", "Максимус («Гладиатор»)",
+      "Паддингтон", "Борат", "Алиса («Алиса в Стране чудес»)", "Безумный Шляпник", "Джейк Салли («Аватар»)",
+      "Рэмбо", "Кот в сапогах", "Бриджит Джонс", "Роуз («Титаник»)", "Джек Доусон («Титаник»)",
+      "Хищник", "Чужой (Ксеноморф)", "Пол Атрейдес («Дюна»)", "Эллен Рипли"
+    ]
+  },
+  {
+    id: "marveldc",
+    name: "🦸 Marvel / DC",
+    characters: [
+      "Железный человек", "Человек-паук", "Бэтмен", "Супермен", "Тор",
+      "Халк", "Капитан Америка", "Чёрная вдова", "Доктор Стрэндж", "Локи",
+      "Дэдпул", "Росомаха", "Веном", "Чёрная Пантера", "Флэш",
+      "Аквамен", "Чудо-женщина", "Харли Квинн", "Джокер", "Пингвин",
+      "Загадочник", "Капитан Марвел", "Сокол", "Зимний Солдат", "Сорвиголова",
+      "Женщина-кошка", "Шазам", "Доктор Осьминог"
+    ]
+  },
+  {
+    id: "starwars",
+    name: "⭐ Star Wars",
+    characters: [
+      "Дарт Вейдер", "Люк Скайуокер", "Йода", "Оби-Ван Кеноби", "Хан Соло",
+      "Чубакка", "Мандалорец", "Грогу (Малыш Йода)"
+    ]
+  },
+  {
+    id: "harrypotter",
+    name: "⚡ Гарри Поттер",
+    characters: [
+      "Гарри Поттер", "Гермиона Грейнджер", "Хагрид", "Добби"
+    ]
+  },
+  {
+    id: "disney",
+    name: "👑 Disney / Pixar",
+    characters: [
+      "Эльза", "Анна", "Симба", "Муфаса", "Тимон",
+      "Пумба", "Моана", "Мулан", "Ариэль", "Белль",
+      "Золушка", "Белоснежка", "Спящая красавица", "Рапунцель", "Аладдин",
+      "Жасмин", "Джинн", "Пиноккио", "Питер Пэн", "Тарзан",
+      "Покахонтас", "Тинкер Белл", "Олаф", "Вуди", "Базз Лайтер",
+      "Молния Маккуин", "Валл-И", "Немо", "Дори", "Русалочка",
+      "Дамбо", "Бэмби"
+    ]
+  },
+  {
+    id: "cartoons",
+    name: "🎭 Другие мультфильмы (Cartoons)",
+    characters: [
+      "Шрек", "Осёл", "Фиона", "Губка Боб", "Патрик Стар",
+      "Сквидвард", "Мистер Крабс", "Сэнди", "Том", "Джерри",
+      "Багз Банни", "Скуби-Ду", "Гарфилд", "Чебурашка", "Карлсон"
+    ]
+  },
+  {
+    id: "games",
+    name: "🎮 Игры (Games)",
+    characters: [
+      "Марио", "Пикачу", "Стив (Minecraft)", "Pac-Man"
+    ]
+  },
+  {
+    id: "historical",
+    name: "📜 Исторические личности (Historical)",
+    characters: [
+      "Клеопатра", "Юлий Цезарь", "Наполеон Бонапарт", "Александр Македонский", "Чингисхан",
+      "Леонардо да Винчи", "Альберт Эйнштейн", "Никола Тесла", "Исаак Ньютон", "Галилео Галилей",
+      "Чарльз Дарвин", "Христофор Колумб", "Марко Поло", "Васко да Гама", "Екатерина II",
+      "Пётр I", "Иван Грозный", "Тутанхамон", "Рамзес II", "Сократ",
+      "Платон", "Аристотель", "Конфуций", "Будда", "Уинстон Черчилль",
+      "Авраам Линкольн", "Махатма Ганди", "Нельсон Мандела", "Мартин Лютер Кинг", "Жанна д'Арк"
+    ]
+  },
+  {
+    id: "celebrities",
+    name: "🌍 Мировые знаменитости (World Stars)",
+    characters: [
+      "Илон Маск", "Дональд Трамп", "Барак Обама", "Джо Байден", "Билл Гейтс",
+      "Марк Цукерберг", "Джефф Безос", "Майкл Джексон", "Элвис Пресли", "Фредди Меркьюри",
+      "Мэрилин Монро", "Леонардо Ди Каприо", "Джонни Депп", "Том Круз", "Брэд Питт",
+      "Анджелина Джоли", "Дуэйн «Скала» Джонсон", "Арнольд Шварценеггер", "Киану Ривз", "Тейлор Свифт",
+      "Бейонсе", "Рианна", "Адель", "Леди Гага", "Эминем",
+      "Снуп Догг", "Джастин Бибер", "Эд Ширан", "Ким Кардашьян", "Опра Уинфри"
+    ]
+  },
+  {
+    id: "russian",
+    name: "🇷🇺 Российские знаменитости (Russian Stars)",
+    characters: [
+      "Алла Пугачёва", "Филипп Киркоров", "Григорий Лепс", "Дима Билан", "Полина Гагарина",
+      "Егор Крид", "Ольга Бузова", "SHAMAN", "Моргенштерн", "Иван Ургант",
+      "Гарик Харламов", "Павел Воля", "Дмитрий Нагиев", "Константин Хабенский", "Михаил Галустян"
+    ]
+  },
+  {
+    id: "athletes",
+    name: "🏆 Спортсмены (Athletes)",
+    characters: [
+      "Лионель Месси", "Криштиану Роналду", "Майкл Джордан", "Майк Тайсон", "Усэйн Болт",
+      "Майкл Фелпс", "Конор Макгрегор", "Хабиб Нурмагомедов", "Александр Овечкин", "Новак Джокович",
+      "Роджер Федерер", "Серена Уильямс", "Леброн Джеймс", "Дэвид Бекхэм", "Пеле",
+      "Диего Марадона"
+    ]
+  },
+  {
+    id: "classic",
+    name: "🌍 Classic (English)",
+    characters: [
+      "Spider-Man", "Batman", "Superman", "Iron Man", "Captain America",
+      "Wonder Woman", "Thor", "Hulk", "Black Panther", "Deadpool",
+      "Harry Potter", "Hermione Granger", "Dumbledore", "Voldemort", "Gandalf",
+      "Frodo Baggins", "Darth Vader", "Luke Skywalker", "Yoda", "Elsa",
+      "Anna", "Woody", "Buzz Lightyear", "Shrek", "Mickey Mouse",
+      "SpongeBob SquarePants", "Homer Simpson", "Mario", "Luigi", "Pikachu",
+      "Sonic the Hedgehog", "Kratos", "Master Chief", "Lara Croft", "Link",
+      "Sherlock Holmes", "James Bond", "Indiana Jones", "Jack Sparrow", "The Joker",
+      "Daenerys Targaryen", "Walter White", "Forrest Gump", "Rocky Balboa",
+      "Willy Wonka", "Winnie the Pooh", "Scooby-Doo", "Bugs Bunny",
+      "Lionel Messi", "Cristiano Ronaldo", "LeBron James", "Serena Williams",
+      "Usain Bolt", "Michael Jordan", "Muhammad Ali", "Roger Federer",
+      "Albert Einstein", "Isaac Newton", "Leonardo da Vinci", "Nikola Tesla",
+      "Marie Curie", "Cleopatra", "Napoleon Bonaparte", "William Shakespeare",
+      "Michael Jackson", "Beyoncé", "Taylor Swift", "Elvis Presley",
+      "Freddie Mercury", "Bob Marley", "Adele", "Ed Sheeran",
+      "Oprah Winfrey", "Mr. Bean"
+    ]
+  }
 ];
