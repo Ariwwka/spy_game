@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- ===================== PERSISTENT TOP BAR ===================== -->
+  <header class="topbar">
+    <span class="topbar-brand">🕵️ <span data-i18n="brand">Spy Game</span></span>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ru">RU</button>
+    </div>
+  </header>
+
   <div class="app">
 
     <!-- ===================== STEP 1: CHARACTER PACKS (MAIN MENU) ===================== -->
@@ -18,18 +28,18 @@
       <div class="card-panel">
         <div class="logo">
           <span class="logo-emoji">🕵️</span>
-          <h1>Spy Card Game</h1>
-          <p class="tagline">Find the spies hiding among you.</p>
+          <h1 data-i18n="title">Spy Card Game</h1>
+          <p class="tagline" data-i18n="tagline">Find the spies hiding among you.</p>
         </div>
 
         <div class="field">
-          <label>Choose character packs</label>
+          <label data-i18n="choosePacks">Choose character packs</label>
           <div id="categoryList" class="category-list"><!-- toggles injected by game.js --></div>
           <p class="hint" id="poolHint">Turn packs on or off to choose which characters can appear.</p>
         </div>
 
-        <button id="toPlayersBtn" class="primary-btn">Continue</button>
-        <button id="howToBtn" class="link-btn">How to play</button>
+        <button id="toPlayersBtn" class="primary-btn" data-i18n="continue">Continue</button>
+        <button id="howToBtn" class="link-btn" data-i18n="howToPlay">How to play</button>
       </div>
     </section>
 
@@ -38,8 +48,8 @@
       <div class="card-panel">
         <div class="logo">
           <span class="logo-emoji">👥</span>
-          <h1>Players</h1>
-          <p class="tagline">How many are playing?</p>
+          <h1 data-i18n="playersTitle">Players</h1>
+          <p class="tagline" data-i18n="playersTag">How many are playing?</p>
         </div>
 
         <div class="field">
@@ -48,24 +58,24 @@
             <input id="playerCount" type="number" min="3" max="20" value="5" inputmode="numeric" />
             <button type="button" id="plusBtn" class="step-btn" aria-label="More players">+</button>
           </div>
-          <p class="hint">Best with 3–12+ players. You'll pass one phone around.</p>
+          <p class="hint" data-i18n="playersHint">Best with 3–12+ players. You'll pass one phone around.</p>
         </div>
 
         <div class="field">
-          <label>Spy chance per player: <span id="spyProbValue">30%</span></label>
+          <label><span data-i18n="spyChance">Spy chance per player:</span> <span id="spyProbValue">30%</span></label>
           <input id="spyProb" class="slider" type="range" min="0" max="100" step="5" value="30" />
-          <p class="hint">Each player independently has this chance of being a spy. Higher = more spies.</p>
+          <p class="hint" data-i18n="spyChanceHint">Each player independently has this chance of being a spy. Higher = more spies.</p>
         </div>
 
-        <button id="startBtn" class="primary-btn">Start Game</button>
-        <button id="backToPacksBtn" class="link-btn">← Back to character packs</button>
+        <button id="startBtn" class="primary-btn" data-i18n="start">Start Game</button>
+        <button id="backToPacksBtn" class="link-btn" data-i18n="back">← Back to character packs</button>
       </div>
     </section>
 
     <!-- ===================== REVEAL ===================== -->
     <section id="screen-reveal" class="screen">
       <div class="reveal-wrap">
-        <button class="exit-btn" data-exit>✕ Menu</button>
+        <button class="exit-btn" data-exit data-i18n="menu">✕ Menu</button>
 
         <p class="pass-label" id="passLabel">Pass the phone to Player 1</p>
 
@@ -73,7 +83,7 @@
           <div class="flip-inner">
             <div class="flip-face flip-back">
               <span class="tap-emoji">👆</span>
-              <span class="tap-text">Tap to reveal</span>
+              <span class="tap-text" data-i18n="tapReveal">Tap to reveal</span>
             </div>
             <div class="flip-face flip-front">
               <span id="roleText" class="role-text">SPY</span>
@@ -90,29 +100,29 @@
     <!-- ===================== DISCUSSION ===================== -->
     <section id="screen-discuss" class="screen">
       <div class="card-panel discuss-panel">
-        <button class="exit-btn" data-exit>✕ Menu</button>
+        <button class="exit-btn" data-exit data-i18n="menu">✕ Menu</button>
         <span class="discuss-emoji">💬</span>
-        <h2>Everyone has seen their role.</h2>
-        <p class="discuss-text">Start discussing! Ask each other questions about the character. Spies — blend in. Everyone else — expose the spies.</p>
-        <button id="newRoundBtn" class="primary-btn">New Round</button>
-        <button id="homeBtn" class="link-btn">Exit to main menu</button>
+        <h2 data-i18n="discussTitle">Everyone has seen their role.</h2>
+        <p class="discuss-text" data-i18n="discussText">Start discussing! Ask each other questions about the character. Spies — blend in. Everyone else — expose the spies.</p>
+        <button id="newRoundBtn" class="primary-btn" data-i18n="newRound">New Round</button>
+        <button id="homeBtn" class="link-btn" data-i18n="exitMenu">Exit to main menu</button>
       </div>
     </section>
 
     <!-- ===================== HOW TO PLAY (modal) ===================== -->
     <div id="howToModal" class="modal-overlay">
       <div class="modal">
-        <h3>How to play</h3>
+        <h3 data-i18n="howTitle">How to play</h3>
         <ol>
-          <li>Choose which <strong>character packs</strong> to include, then tap Continue.</li>
-          <li>Pick the number of players and tap <strong>Start Game</strong>.</li>
-          <li>The game secretly picks one character. Most players get that character — some randomly become a <strong>SPY</strong>.</li>
-          <li>Pass the phone around. Each player privately reveals their card, then hides it.</li>
-          <li>Spies only see the word <strong>SPY</strong> — they don't know the character!</li>
-          <li>Discuss and ask questions to find the spies. Spies try to blend in.</li>
+          <li data-i18n-html="how1">Choose which <strong>character packs</strong> to include, then tap Continue.</li>
+          <li data-i18n-html="how2">Pick the number of players and tap <strong>Start Game</strong>.</li>
+          <li data-i18n-html="how3">The game secretly picks one character. Most players get that character — some randomly become a <strong>SPY</strong>.</li>
+          <li data-i18n-html="how4">Pass the phone around. Each player privately reveals their card, then hides it.</li>
+          <li data-i18n-html="how5">Spies only see the word <strong>SPY</strong> — they don't know the character!</li>
+          <li data-i18n-html="how6">Discuss and ask questions to find the spies. Spies try to blend in.</li>
         </ol>
-        <p class="modal-note">There's no fixed number of spies — a round might have none, one, or many. Each player has a 30% chance of being a spy. You can tap ✕ Menu anytime to start over.</p>
-        <button id="closeModalBtn" class="primary-btn">Got it</button>
+        <p class="modal-note" data-i18n="howNote">There's no fixed number of spies — a round might have none, one, or many. Each player has a 30% chance of being a spy. You can tap ✕ Menu anytime to start over.</p>
+        <button id="closeModalBtn" class="primary-btn" data-i18n="gotIt">Got it</button>
       </div>
     </div>
 
