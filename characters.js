@@ -1,143 +1,1061 @@
-// Fallback character data, used when characters.json cannot be fetched
-// (e.g. when opening index.html directly from disk with file://).
-// The canonical, editable data lives in characters.json — keep them in sync,
-// or just edit characters.json and host via a server / GitHub Pages.
+// AUTO-GENERATED from characters.json — do not edit by hand.
+// Fallback data used when characters.json cannot be fetched (file:// opening).
 window.FALLBACK_CATEGORIES = [
   {
-    id: "films",
-    name: "🎬 Фильмы (Films)",
-    characters: [
-      "Джеймс Бонд", "Джек Воробей", "Терминатор", "Индиана Джонс", "Мистер Бин",
-      "Вилли Вонка", "Годзилла", "Кинг-Конг", "Зорро", "Робокоп",
-      "Робин Гуд", "Шерлок Холмс", "Доктор Ватсон", "Маска", "Гринч",
-      "Круэлла", "Малефисента", "Каспер", "Битлджус", "Агент Джей (Люди в чёрном)",
-      "Агент Кей (Люди в чёрном)", "Оптимус Прайм", "Бамблби", "Остин Пауэрс", "Эйс Вентура",
-      "Рокки Бальбоа", "Чарли Чаплин", "Пеннивайз", "Призрачное лицо (Ghostface)", "Максимус («Гладиатор»)",
-      "Паддингтон", "Борат", "Алиса («Алиса в Стране чудес»)", "Безумный Шляпник", "Джейк Салли («Аватар»)",
-      "Рэмбо", "Кот в сапогах", "Бриджит Джонс", "Роуз («Титаник»)", "Джек Доусон («Титаник»)",
-      "Хищник", "Чужой (Ксеноморф)", "Пол Атрейдес («Дюна»)", "Эллен Рипли"
+    "id": "films",
+    "name": "🎬 Фильмы (Films)",
+    "characters": [
+      {
+        "en": "James Bond",
+        "ru": "Джеймс Бонд"
+      },
+      {
+        "en": "Jack Sparrow",
+        "ru": "Джек Воробей"
+      },
+      {
+        "en": "The Terminator",
+        "ru": "Терминатор"
+      },
+      {
+        "en": "Indiana Jones",
+        "ru": "Индиана Джонс"
+      },
+      {
+        "en": "Mr. Bean",
+        "ru": "Мистер Бин"
+      },
+      {
+        "en": "Willy Wonka",
+        "ru": "Вилли Вонка"
+      },
+      {
+        "en": "Godzilla",
+        "ru": "Годзилла"
+      },
+      {
+        "en": "King Kong",
+        "ru": "Кинг-Конг"
+      },
+      {
+        "en": "Zorro",
+        "ru": "Зорро"
+      },
+      {
+        "en": "RoboCop",
+        "ru": "Робокоп"
+      },
+      {
+        "en": "Robin Hood",
+        "ru": "Робин Гуд"
+      },
+      {
+        "en": "Sherlock Holmes",
+        "ru": "Шерлок Холмс"
+      },
+      {
+        "en": "Doctor Watson",
+        "ru": "Доктор Ватсон"
+      },
+      {
+        "en": "The Mask",
+        "ru": "Маска"
+      },
+      {
+        "en": "The Grinch",
+        "ru": "Гринч"
+      },
+      {
+        "en": "Cruella",
+        "ru": "Круэлла"
+      },
+      {
+        "en": "Maleficent",
+        "ru": "Малефисента"
+      },
+      {
+        "en": "Casper",
+        "ru": "Каспер"
+      },
+      {
+        "en": "Beetlejuice",
+        "ru": "Битлджус"
+      },
+      {
+        "en": "Agent J (Men in Black)",
+        "ru": "Агент Джей (Люди в чёрном)"
+      },
+      {
+        "en": "Agent K (Men in Black)",
+        "ru": "Агент Кей (Люди в чёрном)"
+      },
+      {
+        "en": "Optimus Prime",
+        "ru": "Оптимус Прайм"
+      },
+      {
+        "en": "Bumblebee",
+        "ru": "Бамблби"
+      },
+      {
+        "en": "Austin Powers",
+        "ru": "Остин Пауэрс"
+      },
+      {
+        "en": "Ace Ventura",
+        "ru": "Эйс Вентура"
+      },
+      {
+        "en": "Rocky Balboa",
+        "ru": "Рокки Бальбоа"
+      },
+      {
+        "en": "Charlie Chaplin",
+        "ru": "Чарли Чаплин"
+      },
+      {
+        "en": "Pennywise",
+        "ru": "Пеннивайз"
+      },
+      {
+        "en": "Ghostface",
+        "ru": "Призрачное лицо (Ghostface)"
+      },
+      {
+        "en": "Maximus (Gladiator)",
+        "ru": "Максимус («Гладиатор»)"
+      },
+      {
+        "en": "Paddington",
+        "ru": "Паддингтон"
+      },
+      {
+        "en": "Borat",
+        "ru": "Борат"
+      },
+      {
+        "en": "Alice (in Wonderland)",
+        "ru": "Алиса («Алиса в Стране чудес»)"
+      },
+      {
+        "en": "The Mad Hatter",
+        "ru": "Безумный Шляпник"
+      },
+      {
+        "en": "Jake Sully (Avatar)",
+        "ru": "Джейк Салли («Аватар»)"
+      },
+      {
+        "en": "Rambo",
+        "ru": "Рэмбо"
+      },
+      {
+        "en": "Puss in Boots",
+        "ru": "Кот в сапогах"
+      },
+      {
+        "en": "Bridget Jones",
+        "ru": "Бриджит Джонс"
+      },
+      {
+        "en": "Rose (Titanic)",
+        "ru": "Роуз («Титаник»)"
+      },
+      {
+        "en": "Jack Dawson (Titanic)",
+        "ru": "Джек Доусон («Титаник»)"
+      },
+      {
+        "en": "Predator",
+        "ru": "Хищник"
+      },
+      {
+        "en": "Alien (Xenomorph)",
+        "ru": "Чужой (Ксеноморф)"
+      },
+      {
+        "en": "Paul Atreides (Dune)",
+        "ru": "Пол Атрейдес («Дюна»)"
+      },
+      {
+        "en": "Ellen Ripley",
+        "ru": "Эллен Рипли"
+      }
     ]
   },
   {
-    id: "marveldc",
-    name: "🦸 Marvel / DC",
-    characters: [
-      "Железный человек", "Человек-паук", "Бэтмен", "Супермен", "Тор",
-      "Халк", "Капитан Америка", "Чёрная вдова", "Доктор Стрэндж", "Локи",
-      "Дэдпул", "Росомаха", "Веном", "Чёрная Пантера", "Флэш",
-      "Аквамен", "Чудо-женщина", "Харли Квинн", "Джокер", "Пингвин",
-      "Загадочник", "Капитан Марвел", "Сокол", "Зимний Солдат", "Сорвиголова",
-      "Женщина-кошка", "Шазам", "Доктор Осьминог"
+    "id": "marveldc",
+    "name": "🦸 Marvel / DC",
+    "characters": [
+      {
+        "en": "Iron Man",
+        "ru": "Железный человек"
+      },
+      {
+        "en": "Spider-Man",
+        "ru": "Человек-паук"
+      },
+      {
+        "en": "Batman",
+        "ru": "Бэтмен"
+      },
+      {
+        "en": "Superman",
+        "ru": "Супермен"
+      },
+      {
+        "en": "Thor",
+        "ru": "Тор"
+      },
+      {
+        "en": "Hulk",
+        "ru": "Халк"
+      },
+      {
+        "en": "Captain America",
+        "ru": "Капитан Америка"
+      },
+      {
+        "en": "Black Widow",
+        "ru": "Чёрная вдова"
+      },
+      {
+        "en": "Doctor Strange",
+        "ru": "Доктор Стрэндж"
+      },
+      {
+        "en": "Loki",
+        "ru": "Локи"
+      },
+      {
+        "en": "Deadpool",
+        "ru": "Дэдпул"
+      },
+      {
+        "en": "Wolverine",
+        "ru": "Росомаха"
+      },
+      {
+        "en": "Venom",
+        "ru": "Веном"
+      },
+      {
+        "en": "Black Panther",
+        "ru": "Чёрная Пантера"
+      },
+      {
+        "en": "The Flash",
+        "ru": "Флэш"
+      },
+      {
+        "en": "Aquaman",
+        "ru": "Аквамен"
+      },
+      {
+        "en": "Wonder Woman",
+        "ru": "Чудо-женщина"
+      },
+      {
+        "en": "Harley Quinn",
+        "ru": "Харли Квинн"
+      },
+      {
+        "en": "The Joker",
+        "ru": "Джокер"
+      },
+      {
+        "en": "The Penguin",
+        "ru": "Пингвин"
+      },
+      {
+        "en": "The Riddler",
+        "ru": "Загадочник"
+      },
+      {
+        "en": "Captain Marvel",
+        "ru": "Капитан Марвел"
+      },
+      {
+        "en": "Falcon",
+        "ru": "Сокол"
+      },
+      {
+        "en": "Winter Soldier",
+        "ru": "Зимний Солдат"
+      },
+      {
+        "en": "Daredevil",
+        "ru": "Сорвиголова"
+      },
+      {
+        "en": "Catwoman",
+        "ru": "Женщина-кошка"
+      },
+      {
+        "en": "Shazam",
+        "ru": "Шазам"
+      },
+      {
+        "en": "Doctor Octopus",
+        "ru": "Доктор Осьминог"
+      }
     ]
   },
   {
-    id: "starwars",
-    name: "⭐ Star Wars",
-    characters: [
-      "Дарт Вейдер", "Люк Скайуокер", "Йода", "Оби-Ван Кеноби", "Хан Соло",
-      "Чубакка", "Мандалорец", "Грогу (Малыш Йода)"
+    "id": "starwars",
+    "name": "⭐ Star Wars",
+    "characters": [
+      {
+        "en": "Darth Vader",
+        "ru": "Дарт Вейдер"
+      },
+      {
+        "en": "Luke Skywalker",
+        "ru": "Люк Скайуокер"
+      },
+      {
+        "en": "Yoda",
+        "ru": "Йода"
+      },
+      {
+        "en": "Obi-Wan Kenobi",
+        "ru": "Оби-Ван Кеноби"
+      },
+      {
+        "en": "Han Solo",
+        "ru": "Хан Соло"
+      },
+      {
+        "en": "Chewbacca",
+        "ru": "Чубакка"
+      },
+      {
+        "en": "The Mandalorian",
+        "ru": "Мандалорец"
+      },
+      {
+        "en": "Grogu (Baby Yoda)",
+        "ru": "Грогу (Малыш Йода)"
+      }
     ]
   },
   {
-    id: "harrypotter",
-    name: "⚡ Гарри Поттер",
-    characters: [
-      "Гарри Поттер", "Гермиона Грейнджер", "Хагрид", "Добби"
+    "id": "harrypotter",
+    "name": "⚡ Гарри Поттер",
+    "characters": [
+      {
+        "en": "Harry Potter",
+        "ru": "Гарри Поттер"
+      },
+      {
+        "en": "Hermione Granger",
+        "ru": "Гермиона Грейнджер"
+      },
+      {
+        "en": "Hagrid",
+        "ru": "Хагрид"
+      },
+      {
+        "en": "Dobby",
+        "ru": "Добби"
+      }
     ]
   },
   {
-    id: "disney",
-    name: "👑 Disney / Pixar",
-    characters: [
-      "Эльза", "Анна", "Симба", "Муфаса", "Тимон",
-      "Пумба", "Моана", "Мулан", "Ариэль", "Белль",
-      "Золушка", "Белоснежка", "Спящая красавица", "Рапунцель", "Аладдин",
-      "Жасмин", "Джинн", "Пиноккио", "Питер Пэн", "Тарзан",
-      "Покахонтас", "Тинкер Белл", "Олаф", "Вуди", "Базз Лайтер",
-      "Молния Маккуин", "Валл-И", "Немо", "Дори", "Русалочка",
-      "Дамбо", "Бэмби"
+    "id": "disney",
+    "name": "👑 Disney / Pixar",
+    "characters": [
+      {
+        "en": "Elsa",
+        "ru": "Эльза"
+      },
+      {
+        "en": "Anna",
+        "ru": "Анна"
+      },
+      {
+        "en": "Simba",
+        "ru": "Симба"
+      },
+      {
+        "en": "Mufasa",
+        "ru": "Муфаса"
+      },
+      {
+        "en": "Timon",
+        "ru": "Тимон"
+      },
+      {
+        "en": "Pumbaa",
+        "ru": "Пумба"
+      },
+      {
+        "en": "Moana",
+        "ru": "Моана"
+      },
+      {
+        "en": "Mulan",
+        "ru": "Мулан"
+      },
+      {
+        "en": "Ariel",
+        "ru": "Ариэль"
+      },
+      {
+        "en": "Belle",
+        "ru": "Белль"
+      },
+      {
+        "en": "Cinderella",
+        "ru": "Золушка"
+      },
+      {
+        "en": "Snow White",
+        "ru": "Белоснежка"
+      },
+      {
+        "en": "Sleeping Beauty",
+        "ru": "Спящая красавица"
+      },
+      {
+        "en": "Rapunzel",
+        "ru": "Рапунцель"
+      },
+      {
+        "en": "Aladdin",
+        "ru": "Аладдин"
+      },
+      {
+        "en": "Jasmine",
+        "ru": "Жасмин"
+      },
+      {
+        "en": "Genie",
+        "ru": "Джинн"
+      },
+      {
+        "en": "Pinocchio",
+        "ru": "Пиноккио"
+      },
+      {
+        "en": "Peter Pan",
+        "ru": "Питер Пэн"
+      },
+      {
+        "en": "Tarzan",
+        "ru": "Тарзан"
+      },
+      {
+        "en": "Pocahontas",
+        "ru": "Покахонтас"
+      },
+      {
+        "en": "Tinker Bell",
+        "ru": "Тинкер Белл"
+      },
+      {
+        "en": "Olaf",
+        "ru": "Олаф"
+      },
+      {
+        "en": "Woody",
+        "ru": "Вуди"
+      },
+      {
+        "en": "Buzz Lightyear",
+        "ru": "Базз Лайтер"
+      },
+      {
+        "en": "Lightning McQueen",
+        "ru": "Молния Маккуин"
+      },
+      {
+        "en": "WALL-E",
+        "ru": "Валл-И"
+      },
+      {
+        "en": "Nemo",
+        "ru": "Немо"
+      },
+      {
+        "en": "Dory",
+        "ru": "Дори"
+      },
+      {
+        "en": "The Little Mermaid",
+        "ru": "Русалочка"
+      },
+      {
+        "en": "Dumbo",
+        "ru": "Дамбо"
+      },
+      {
+        "en": "Bambi",
+        "ru": "Бэмби"
+      }
     ]
   },
   {
-    id: "cartoons",
-    name: "🎭 Другие мультфильмы (Cartoons)",
-    characters: [
-      "Шрек", "Осёл", "Фиона", "Губка Боб", "Патрик Стар",
-      "Сквидвард", "Мистер Крабс", "Сэнди", "Том", "Джерри",
-      "Багз Банни", "Скуби-Ду", "Гарфилд", "Чебурашка", "Карлсон"
+    "id": "cartoons",
+    "name": "🎭 Другие мультфильмы (Cartoons)",
+    "characters": [
+      {
+        "en": "Shrek",
+        "ru": "Шрек"
+      },
+      {
+        "en": "Donkey",
+        "ru": "Осёл"
+      },
+      {
+        "en": "Fiona",
+        "ru": "Фиона"
+      },
+      {
+        "en": "SpongeBob",
+        "ru": "Губка Боб"
+      },
+      {
+        "en": "Patrick Star",
+        "ru": "Патрик Стар"
+      },
+      {
+        "en": "Squidward",
+        "ru": "Сквидвард"
+      },
+      {
+        "en": "Mr. Krabs",
+        "ru": "Мистер Крабс"
+      },
+      {
+        "en": "Sandy",
+        "ru": "Сэнди"
+      },
+      {
+        "en": "Tom",
+        "ru": "Том"
+      },
+      {
+        "en": "Jerry",
+        "ru": "Джерри"
+      },
+      {
+        "en": "Bugs Bunny",
+        "ru": "Багз Банни"
+      },
+      {
+        "en": "Scooby-Doo",
+        "ru": "Скуби-Ду"
+      },
+      {
+        "en": "Garfield",
+        "ru": "Гарфилд"
+      },
+      {
+        "en": "Cheburashka",
+        "ru": "Чебурашка"
+      },
+      {
+        "en": "Karlsson",
+        "ru": "Карлсон"
+      }
     ]
   },
   {
-    id: "games",
-    name: "🎮 Игры (Games)",
-    characters: [
-      "Марио", "Пикачу", "Стив (Minecraft)", "Pac-Man"
+    "id": "games",
+    "name": "🎮 Игры (Games)",
+    "characters": [
+      {
+        "en": "Mario",
+        "ru": "Марио"
+      },
+      {
+        "en": "Pikachu",
+        "ru": "Пикачу"
+      },
+      {
+        "en": "Steve (Minecraft)",
+        "ru": "Стив (Minecraft)"
+      },
+      {
+        "en": "Pac-Man",
+        "ru": "Пакман"
+      }
     ]
   },
   {
-    id: "historical",
-    name: "📜 Исторические личности (Historical)",
-    characters: [
-      "Клеопатра", "Юлий Цезарь", "Наполеон Бонапарт", "Александр Македонский", "Чингисхан",
-      "Леонардо да Винчи", "Альберт Эйнштейн", "Никола Тесла", "Исаак Ньютон", "Галилео Галилей",
-      "Чарльз Дарвин", "Христофор Колумб", "Марко Поло", "Васко да Гама", "Екатерина II",
-      "Пётр I", "Иван Грозный", "Тутанхамон", "Рамзес II", "Сократ",
-      "Платон", "Аристотель", "Конфуций", "Будда", "Уинстон Черчилль",
-      "Авраам Линкольн", "Махатма Ганди", "Нельсон Мандела", "Мартин Лютер Кинг", "Жанна д'Арк"
+    "id": "historical",
+    "name": "📜 Исторические личности (Historical)",
+    "characters": [
+      {
+        "en": "Cleopatra",
+        "ru": "Клеопатра"
+      },
+      {
+        "en": "Julius Caesar",
+        "ru": "Юлий Цезарь"
+      },
+      {
+        "en": "Napoleon Bonaparte",
+        "ru": "Наполеон Бонапарт"
+      },
+      {
+        "en": "Alexander the Great",
+        "ru": "Александр Македонский"
+      },
+      {
+        "en": "Genghis Khan",
+        "ru": "Чингисхан"
+      },
+      {
+        "en": "Leonardo da Vinci",
+        "ru": "Леонардо да Винчи"
+      },
+      {
+        "en": "Albert Einstein",
+        "ru": "Альберт Эйнштейн"
+      },
+      {
+        "en": "Nikola Tesla",
+        "ru": "Никола Тесла"
+      },
+      {
+        "en": "Isaac Newton",
+        "ru": "Исаак Ньютон"
+      },
+      {
+        "en": "Galileo Galilei",
+        "ru": "Галилео Галилей"
+      },
+      {
+        "en": "Charles Darwin",
+        "ru": "Чарльз Дарвин"
+      },
+      {
+        "en": "Christopher Columbus",
+        "ru": "Христофор Колумб"
+      },
+      {
+        "en": "Marco Polo",
+        "ru": "Марко Поло"
+      },
+      {
+        "en": "Vasco da Gama",
+        "ru": "Васко да Гама"
+      },
+      {
+        "en": "Catherine the Great",
+        "ru": "Екатерина II"
+      },
+      {
+        "en": "Peter the Great",
+        "ru": "Пётр I"
+      },
+      {
+        "en": "Ivan the Terrible",
+        "ru": "Иван Грозный"
+      },
+      {
+        "en": "Tutankhamun",
+        "ru": "Тутанхамон"
+      },
+      {
+        "en": "Ramesses II",
+        "ru": "Рамзес II"
+      },
+      {
+        "en": "Socrates",
+        "ru": "Сократ"
+      },
+      {
+        "en": "Plato",
+        "ru": "Платон"
+      },
+      {
+        "en": "Aristotle",
+        "ru": "Аристотель"
+      },
+      {
+        "en": "Confucius",
+        "ru": "Конфуций"
+      },
+      {
+        "en": "Buddha",
+        "ru": "Будда"
+      },
+      {
+        "en": "Winston Churchill",
+        "ru": "Уинстон Черчилль"
+      },
+      {
+        "en": "Abraham Lincoln",
+        "ru": "Авраам Линкольн"
+      },
+      {
+        "en": "Mahatma Gandhi",
+        "ru": "Махатма Ганди"
+      },
+      {
+        "en": "Nelson Mandela",
+        "ru": "Нельсон Мандела"
+      },
+      {
+        "en": "Martin Luther King",
+        "ru": "Мартин Лютер Кинг"
+      },
+      {
+        "en": "Joan of Arc",
+        "ru": "Жанна д'Арк"
+      }
     ]
   },
   {
-    id: "celebrities",
-    name: "🌍 Мировые знаменитости (World Stars)",
-    characters: [
-      "Илон Маск", "Дональд Трамп", "Барак Обама", "Джо Байден", "Билл Гейтс",
-      "Марк Цукерберг", "Джефф Безос", "Майкл Джексон", "Элвис Пресли", "Фредди Меркьюри",
-      "Мэрилин Монро", "Леонардо Ди Каприо", "Джонни Депп", "Том Круз", "Брэд Питт",
-      "Анджелина Джоли", "Дуэйн «Скала» Джонсон", "Арнольд Шварценеггер", "Киану Ривз", "Тейлор Свифт",
-      "Бейонсе", "Рианна", "Адель", "Леди Гага", "Эминем",
-      "Снуп Догг", "Джастин Бибер", "Эд Ширан", "Ким Кардашьян", "Опра Уинфри"
+    "id": "celebrities",
+    "name": "🌍 Мировые знаменитости (World Stars)",
+    "characters": [
+      {
+        "en": "Elon Musk",
+        "ru": "Илон Маск"
+      },
+      {
+        "en": "Donald Trump",
+        "ru": "Дональд Трамп"
+      },
+      {
+        "en": "Barack Obama",
+        "ru": "Барак Обама"
+      },
+      {
+        "en": "Joe Biden",
+        "ru": "Джо Байден"
+      },
+      {
+        "en": "Bill Gates",
+        "ru": "Билл Гейтс"
+      },
+      {
+        "en": "Mark Zuckerberg",
+        "ru": "Марк Цукерберг"
+      },
+      {
+        "en": "Jeff Bezos",
+        "ru": "Джефф Безос"
+      },
+      {
+        "en": "Michael Jackson",
+        "ru": "Майкл Джексон"
+      },
+      {
+        "en": "Elvis Presley",
+        "ru": "Элвис Пресли"
+      },
+      {
+        "en": "Freddie Mercury",
+        "ru": "Фредди Меркьюри"
+      },
+      {
+        "en": "Marilyn Monroe",
+        "ru": "Мэрилин Монро"
+      },
+      {
+        "en": "Leonardo DiCaprio",
+        "ru": "Леонардо Ди Каприо"
+      },
+      {
+        "en": "Johnny Depp",
+        "ru": "Джонни Депп"
+      },
+      {
+        "en": "Tom Cruise",
+        "ru": "Том Круз"
+      },
+      {
+        "en": "Brad Pitt",
+        "ru": "Брэд Питт"
+      },
+      {
+        "en": "Angelina Jolie",
+        "ru": "Анджелина Джоли"
+      },
+      {
+        "en": "Dwayne \"The Rock\" Johnson",
+        "ru": "Дуэйн «Скала» Джонсон"
+      },
+      {
+        "en": "Arnold Schwarzenegger",
+        "ru": "Арнольд Шварценеггер"
+      },
+      {
+        "en": "Keanu Reeves",
+        "ru": "Киану Ривз"
+      },
+      {
+        "en": "Taylor Swift",
+        "ru": "Тейлор Свифт"
+      },
+      {
+        "en": "Beyoncé",
+        "ru": "Бейонсе"
+      },
+      {
+        "en": "Rihanna",
+        "ru": "Рианна"
+      },
+      {
+        "en": "Adele",
+        "ru": "Адель"
+      },
+      {
+        "en": "Lady Gaga",
+        "ru": "Леди Гага"
+      },
+      {
+        "en": "Eminem",
+        "ru": "Эминем"
+      },
+      {
+        "en": "Snoop Dogg",
+        "ru": "Снуп Догг"
+      },
+      {
+        "en": "Justin Bieber",
+        "ru": "Джастин Бибер"
+      },
+      {
+        "en": "Ed Sheeran",
+        "ru": "Эд Ширан"
+      },
+      {
+        "en": "Kim Kardashian",
+        "ru": "Ким Кардашьян"
+      },
+      {
+        "en": "Oprah Winfrey",
+        "ru": "Опра Уинфри"
+      }
     ]
   },
   {
-    id: "russian",
-    name: "🇷🇺 Российские знаменитости (Russian Stars)",
-    characters: [
-      "Алла Пугачёва", "Филипп Киркоров", "Григорий Лепс", "Дима Билан", "Полина Гагарина",
-      "Егор Крид", "Ольга Бузова", "SHAMAN", "Моргенштерн", "Иван Ургант",
-      "Гарик Харламов", "Павел Воля", "Дмитрий Нагиев", "Константин Хабенский", "Михаил Галустян"
+    "id": "russian",
+    "name": "🇷🇺 Российские знаменитости (Russian Stars)",
+    "characters": [
+      {
+        "en": "Alla Pugacheva",
+        "ru": "Алла Пугачёва"
+      },
+      {
+        "en": "Philipp Kirkorov",
+        "ru": "Филипп Киркоров"
+      },
+      {
+        "en": "Grigory Leps",
+        "ru": "Григорий Лепс"
+      },
+      {
+        "en": "Dima Bilan",
+        "ru": "Дима Билан"
+      },
+      {
+        "en": "Polina Gagarina",
+        "ru": "Полина Гагарина"
+      },
+      {
+        "en": "Egor Kreed",
+        "ru": "Егор Крид"
+      },
+      {
+        "en": "Olga Buzova",
+        "ru": "Ольга Бузова"
+      },
+      {
+        "en": "SHAMAN",
+        "ru": "SHAMAN"
+      },
+      {
+        "en": "Morgenshtern",
+        "ru": "Моргенштерн"
+      },
+      {
+        "en": "Ivan Urgant",
+        "ru": "Иван Ургант"
+      },
+      {
+        "en": "Garik Kharlamov",
+        "ru": "Гарик Харламов"
+      },
+      {
+        "en": "Pavel Volya",
+        "ru": "Павел Воля"
+      },
+      {
+        "en": "Dmitry Nagiev",
+        "ru": "Дмитрий Нагиев"
+      },
+      {
+        "en": "Konstantin Khabensky",
+        "ru": "Константин Хабенский"
+      },
+      {
+        "en": "Mikhail Galustyan",
+        "ru": "Михаил Галустян"
+      }
     ]
   },
   {
-    id: "athletes",
-    name: "🏆 Спортсмены (Athletes)",
-    characters: [
-      "Лионель Месси", "Криштиану Роналду", "Майкл Джордан", "Майк Тайсон", "Усэйн Болт",
-      "Майкл Фелпс", "Конор Макгрегор", "Хабиб Нурмагомедов", "Александр Овечкин", "Новак Джокович",
-      "Роджер Федерер", "Серена Уильямс", "Леброн Джеймс", "Дэвид Бекхэм", "Пеле",
-      "Диего Марадона"
+    "id": "athletes",
+    "name": "🏆 Спортсмены (Athletes)",
+    "characters": [
+      {
+        "en": "Lionel Messi",
+        "ru": "Лионель Месси"
+      },
+      {
+        "en": "Cristiano Ronaldo",
+        "ru": "Криштиану Роналду"
+      },
+      {
+        "en": "Michael Jordan",
+        "ru": "Майкл Джордан"
+      },
+      {
+        "en": "Mike Tyson",
+        "ru": "Майк Тайсон"
+      },
+      {
+        "en": "Usain Bolt",
+        "ru": "Усэйн Болт"
+      },
+      {
+        "en": "Michael Phelps",
+        "ru": "Майкл Фелпс"
+      },
+      {
+        "en": "Conor McGregor",
+        "ru": "Конор Макгрегор"
+      },
+      {
+        "en": "Khabib Nurmagomedov",
+        "ru": "Хабиб Нурмагомедов"
+      },
+      {
+        "en": "Alexander Ovechkin",
+        "ru": "Александр Овечкин"
+      },
+      {
+        "en": "Novak Djokovic",
+        "ru": "Новак Джокович"
+      },
+      {
+        "en": "Roger Federer",
+        "ru": "Роджер Федерер"
+      },
+      {
+        "en": "Serena Williams",
+        "ru": "Серена Уильямс"
+      },
+      {
+        "en": "LeBron James",
+        "ru": "Леброн Джеймс"
+      },
+      {
+        "en": "David Beckham",
+        "ru": "Дэвид Бекхэм"
+      },
+      {
+        "en": "Pelé",
+        "ru": "Пеле"
+      },
+      {
+        "en": "Diego Maradona",
+        "ru": "Диего Марадона"
+      }
     ]
   },
   {
-    id: "classic",
-    name: "🌍 Classic (English)",
-    characters: [
-      "Spider-Man", "Batman", "Superman", "Iron Man", "Captain America",
-      "Wonder Woman", "Thor", "Hulk", "Black Panther", "Deadpool",
-      "Harry Potter", "Hermione Granger", "Dumbledore", "Voldemort", "Gandalf",
-      "Frodo Baggins", "Darth Vader", "Luke Skywalker", "Yoda", "Elsa",
-      "Anna", "Woody", "Buzz Lightyear", "Shrek", "Mickey Mouse",
-      "SpongeBob SquarePants", "Homer Simpson", "Mario", "Luigi", "Pikachu",
-      "Sonic the Hedgehog", "Kratos", "Master Chief", "Lara Croft", "Link",
-      "Sherlock Holmes", "James Bond", "Indiana Jones", "Jack Sparrow", "The Joker",
-      "Daenerys Targaryen", "Walter White", "Forrest Gump", "Rocky Balboa",
-      "Willy Wonka", "Winnie the Pooh", "Scooby-Doo", "Bugs Bunny",
-      "Lionel Messi", "Cristiano Ronaldo", "LeBron James", "Serena Williams",
-      "Usain Bolt", "Michael Jordan", "Muhammad Ali", "Roger Federer",
-      "Albert Einstein", "Isaac Newton", "Leonardo da Vinci", "Nikola Tesla",
-      "Marie Curie", "Cleopatra", "Napoleon Bonaparte", "William Shakespeare",
-      "Michael Jackson", "Beyoncé", "Taylor Swift", "Elvis Presley",
-      "Freddie Mercury", "Bob Marley", "Adele", "Ed Sheeran",
-      "Oprah Winfrey", "Mr. Bean"
+    "id": "classic",
+    "name": "🌟 Classic mix (Классика)",
+    "defaultOff": true,
+    "characters": [
+      {
+        "en": "Gandalf",
+        "ru": "Гэндальф"
+      },
+      {
+        "en": "Frodo Baggins",
+        "ru": "Фродо Бэггинс"
+      },
+      {
+        "en": "Dumbledore",
+        "ru": "Дамблдор"
+      },
+      {
+        "en": "Voldemort",
+        "ru": "Волан-де-Морт"
+      },
+      {
+        "en": "Mickey Mouse",
+        "ru": "Микки Маус"
+      },
+      {
+        "en": "Homer Simpson",
+        "ru": "Гомер Симпсон"
+      },
+      {
+        "en": "Luigi",
+        "ru": "Луиджи"
+      },
+      {
+        "en": "Sonic the Hedgehog",
+        "ru": "Ёжик Соник"
+      },
+      {
+        "en": "Kratos",
+        "ru": "Кратос"
+      },
+      {
+        "en": "Master Chief",
+        "ru": "Мастер Чиф"
+      },
+      {
+        "en": "Lara Croft",
+        "ru": "Лара Крофт"
+      },
+      {
+        "en": "Link",
+        "ru": "Линк"
+      },
+      {
+        "en": "Daenerys Targaryen",
+        "ru": "Дейенерис Таргариен"
+      },
+      {
+        "en": "Walter White",
+        "ru": "Уолтер Уайт"
+      },
+      {
+        "en": "Forrest Gump",
+        "ru": "Форрест Гамп"
+      },
+      {
+        "en": "Winnie the Pooh",
+        "ru": "Винни-Пух"
+      },
+      {
+        "en": "Muhammad Ali",
+        "ru": "Мохаммед Али"
+      },
+      {
+        "en": "Marie Curie",
+        "ru": "Мария Кюри"
+      },
+      {
+        "en": "William Shakespeare",
+        "ru": "Уильям Шекспир"
+      },
+      {
+        "en": "Bob Marley",
+        "ru": "Боб Марли"
+      }
     ]
   }
 ];

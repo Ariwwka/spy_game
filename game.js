@@ -157,11 +157,22 @@
       .catch(function () { return (window.FALLBACK_CATEGORIES || []).slice(); })
       .then(function (list) {
         categories = list.map(function (c) {
-          return { id: c.id, name: c.name, characters: (c.characters || []).slice(), enabled: true };
+          return {
+            id: c.id,
+            name: c.name,
+            characters: (c.characters || []).slice(),
+            enabled: c.defaultOff ? false : true
+          };
         });
         renderCategories();
         updatePoolHint();
       });
+  }
+
+  // A character is an object { en, ru }. Return its name for the current language.
+  function charName(ch) {
+    if (ch && typeof ch === "object") return ch[lang] || ch.en || ch.ru || "";
+    return ch; // legacy string, just in case
   }
 
   function renderCategories() {
@@ -268,7 +279,7 @@
         el.roleText.textContent = t("spy");
         el.roleSub.textContent = t("roleSubSpy");
       } else {
-        el.roleText.textContent = shownRole;
+        el.roleText.textContent = charName(shownRole);
         el.roleSub.textContent = t("roleSubChar");
       }
     }
@@ -281,7 +292,7 @@
       el.roleSub.textContent = t("roleSubSpy");
       el.flipCard.classList.add("is-spy");
     } else {
-      el.roleText.textContent = shownRole;
+      el.roleText.textContent = charName(shownRole);
       el.roleSub.textContent = t("roleSubChar");
       el.flipCard.classList.remove("is-spy");
     }
