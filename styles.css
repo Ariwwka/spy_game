@@ -156,11 +156,11 @@ label {
 }
 .category-row.on { border-color: var(--teal); background: #f2fffd; }
 .category-name {
-  font-family: "Baloo 2", cursive;
+  font-family: "Roboto", "Segoe UI", system-ui, sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 .category-count { color: #a7a2bd; font-weight: 700; font-size: 13px; }
 .category-left { display: flex; flex-direction: column; gap: 2px; }
@@ -302,10 +302,10 @@ label {
   color: var(--yellow);
 }
 .role-text {
-  font-family: "Baloo 2", cursive;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1.1;
+  font-family: "Roboto", "Segoe UI", system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.15;
 }
 .flip-card.is-spy .role-text { font-size: 64px; letter-spacing: 3px; }
 .role-sub {
