@@ -180,6 +180,46 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Ellen Ripley",
         "ru": "Эллен Рипли"
+      },
+      {
+        "en": "Dracula",
+        "ru": "Дракула"
+      },
+      {
+        "en": "Frankenstein",
+        "ru": "Франкенштейн"
+      },
+      {
+        "en": "Eggsy (Kingsman)",
+        "ru": "Эггси (Kingsman)"
+      },
+      {
+        "en": "Dominic Toretto",
+        "ru": "Доминик Торетто"
+      },
+      {
+        "en": "Asterix",
+        "ru": "Астерикс"
+      },
+      {
+        "en": "Obelix",
+        "ru": "Обеликс"
+      },
+      {
+        "en": "Kevin McCallister",
+        "ru": "Кевин Маккалистер"
+      },
+      {
+        "en": "Dom Cobb (Inception)",
+        "ru": "Доминик Кобб («Начало»)"
+      },
+      {
+        "en": "Jack Skellington",
+        "ru": "Джек Скеллингтон"
+      },
+      {
+        "en": "Trinity (The Matrix)",
+        "ru": "Тринити («Матрица»)"
       }
     ]
   },
@@ -492,6 +532,34 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Bambi",
         "ru": "Бэмби"
+      },
+      {
+        "en": "Mickey Mouse",
+        "ru": "Микки Маус"
+      },
+      {
+        "en": "Donald Duck",
+        "ru": "Дональд Дак"
+      },
+      {
+        "en": "Winnie the Pooh",
+        "ru": "Винни-Пух"
+      },
+      {
+        "en": "Goofy",
+        "ru": "Гуфи"
+      },
+      {
+        "en": "Pluto",
+        "ru": "Плуто"
+      },
+      {
+        "en": "Chip",
+        "ru": "Чип"
+      },
+      {
+        "en": "Dale",
+        "ru": "Дейл"
       }
     ]
   },
@@ -562,6 +630,56 @@ window.FALLBACK_CATEGORIES = [
     ]
   },
   {
+    "id": "sovcartoons",
+    "name": "🇷🇺 Советские мультфильмы (Soviet cartoons)",
+    "characters": [
+      {
+        "en": "Masha",
+        "ru": "Маша"
+      },
+      {
+        "en": "The Bear (Masha and the Bear)",
+        "ru": "Медведь"
+      },
+      {
+        "en": "Piglet (Pyatachok)",
+        "ru": "Пятачок"
+      },
+      {
+        "en": "Leopold the Cat",
+        "ru": "Кот Леопольд"
+      },
+      {
+        "en": "Luntik",
+        "ru": "Лунтик"
+      },
+      {
+        "en": "The Wolf (Nu, Pogodi!)",
+        "ru": "Волк («Ну, погоди!»)"
+      },
+      {
+        "en": "The Hare (Nu, Pogodi!)",
+        "ru": "Заяц («Ну, погоди!»)"
+      },
+      {
+        "en": "Shapoklyak",
+        "ru": "Шапокляк"
+      },
+      {
+        "en": "Kesha the Parrot",
+        "ru": "Попугай Кеша"
+      },
+      {
+        "en": "Gena the Crocodile",
+        "ru": "Крокодил Гена"
+      },
+      {
+        "en": "Buratino",
+        "ru": "Буратино"
+      }
+    ]
+  },
+  {
     "id": "games",
     "name": "🎮 Игры (Games)",
     "characters": [
@@ -580,6 +698,36 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Pac-Man",
         "ru": "Пакман"
+      }
+    ]
+  },
+  {
+    "id": "series",
+    "name": "📺 Сериалы (TV Series)",
+    "characters": [
+      {
+        "en": "Sheldon Cooper",
+        "ru": "Шелдон Купер"
+      },
+      {
+        "en": "Joey Tribbiani",
+        "ru": "Джоуи Триббиани"
+      },
+      {
+        "en": "Rachel Green",
+        "ru": "Рэйчел Грин"
+      },
+      {
+        "en": "Chandler Bing",
+        "ru": "Чендлер Бинг"
+      },
+      {
+        "en": "Walter White",
+        "ru": "Уолтер Уайт"
+      },
+      {
+        "en": "Jesse Pinkman",
+        "ru": "Джесси Пинкман"
       }
     ]
   },
@@ -706,6 +854,26 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Joan of Arc",
         "ru": "Жанна д'Арк"
+      },
+      {
+        "en": "Yuri Gagarin",
+        "ru": "Юрий Гагарин"
+      },
+      {
+        "en": "William Shakespeare",
+        "ru": "Уильям Шекспир"
+      },
+      {
+        "en": "Wolfgang Amadeus Mozart",
+        "ru": "Вольфганг Амадей Моцарт"
+      },
+      {
+        "en": "Ludwig van Beethoven",
+        "ru": "Людвиг ван Бетховен"
+      },
+      {
+        "en": "Elizabeth II",
+        "ru": "Елизавета II"
       }
     ]
   },
@@ -832,6 +1000,38 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Oprah Winfrey",
         "ru": "Опра Уинфри"
+      },
+      {
+        "en": "MrBeast",
+        "ru": "MrBeast"
+      },
+      {
+        "en": "Gordon Ramsay",
+        "ru": "Гордон Рамзи"
+      },
+      {
+        "en": "Selena Gomez",
+        "ru": "Селена Гомес"
+      },
+      {
+        "en": "Tom Holland",
+        "ru": "Том Холланд"
+      },
+      {
+        "en": "Jim Carrey",
+        "ru": "Джим Керри"
+      },
+      {
+        "en": "Morgan Freeman",
+        "ru": "Морган Фримен"
+      },
+      {
+        "en": "Robert Downey Jr.",
+        "ru": "Роберт Дауни — младший"
+      },
+      {
+        "en": "Will Smith",
+        "ru": "Уилл Смит"
       }
     ]
   },
@@ -898,6 +1098,22 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Mikhail Galustyan",
         "ru": "Михаил Галустян"
+      },
+      {
+        "en": "Timati",
+        "ru": "Тимати"
+      },
+      {
+        "en": "Sergey Zhukov",
+        "ru": "Сергей Жуков"
+      },
+      {
+        "en": "Yuri Nikulin",
+        "ru": "Юрий Никулин"
+      },
+      {
+        "en": "Sergey Lazarev",
+        "ru": "Сергей Лазарев"
       }
     ]
   },
@@ -993,10 +1209,6 @@ window.FALLBACK_CATEGORIES = [
         "ru": "Волан-де-Морт"
       },
       {
-        "en": "Mickey Mouse",
-        "ru": "Микки Маус"
-      },
-      {
         "en": "Homer Simpson",
         "ru": "Гомер Симпсон"
       },
@@ -1029,16 +1241,8 @@ window.FALLBACK_CATEGORIES = [
         "ru": "Дейенерис Таргариен"
       },
       {
-        "en": "Walter White",
-        "ru": "Уолтер Уайт"
-      },
-      {
         "en": "Forrest Gump",
         "ru": "Форрест Гамп"
-      },
-      {
-        "en": "Winnie the Pooh",
-        "ru": "Винни-Пух"
       },
       {
         "en": "Muhammad Ali",
@@ -1047,10 +1251,6 @@ window.FALLBACK_CATEGORIES = [
       {
         "en": "Marie Curie",
         "ru": "Мария Кюри"
-      },
-      {
-        "en": "William Shakespeare",
-        "ru": "Уильям Шекспир"
       },
       {
         "en": "Bob Marley",

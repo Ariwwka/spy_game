@@ -47,7 +47,17 @@
         { "en": "Predator", "ru": "Хищник" },
         { "en": "Alien (Xenomorph)", "ru": "Чужой (Ксеноморф)" },
         { "en": "Paul Atreides (Dune)", "ru": "Пол Атрейдес («Дюна»)" },
-        { "en": "Ellen Ripley", "ru": "Эллен Рипли" }
+        { "en": "Ellen Ripley", "ru": "Эллен Рипли" },
+        { "en": "Dracula", "ru": "Дракула" },
+        { "en": "Frankenstein", "ru": "Франкенштейн" },
+        { "en": "Eggsy (Kingsman)", "ru": "Эггси (Kingsman)" },
+        { "en": "Dominic Toretto", "ru": "Доминик Торетто" },
+        { "en": "Asterix", "ru": "Астерикс" },
+        { "en": "Obelix", "ru": "Обеликс" },
+        { "en": "Kevin McCallister", "ru": "Кевин Маккалистер" },
+        { "en": "Dom Cobb (Inception)", "ru": "Доминик Кобб («Начало»)" },
+        { "en": "Jack Skellington", "ru": "Джек Скеллингтон" },
+        { "en": "Trinity (The Matrix)", "ru": "Тринити («Матрица»)" }
       ]
     },
     {
@@ -143,7 +153,14 @@
         { "en": "Dory", "ru": "Дори" },
         { "en": "The Little Mermaid", "ru": "Русалочка" },
         { "en": "Dumbo", "ru": "Дамбо" },
-        { "en": "Bambi", "ru": "Бэмби" }
+        { "en": "Bambi", "ru": "Бэмби" },
+        { "en": "Mickey Mouse", "ru": "Микки Маус" },
+        { "en": "Donald Duck", "ru": "Дональд Дак" },
+        { "en": "Winnie the Pooh", "ru": "Винни-Пух" },
+        { "en": "Goofy", "ru": "Гуфи" },
+        { "en": "Pluto", "ru": "Плуто" },
+        { "en": "Chip", "ru": "Чип" },
+        { "en": "Dale", "ru": "Дейл" }
       ]
     },
     {
@@ -168,6 +185,23 @@
       ]
     },
     {
+      "id": "sovcartoons",
+      "name": "🇷🇺 Советские мультфильмы (Soviet cartoons)",
+      "characters": [
+        { "en": "Masha", "ru": "Маша" },
+        { "en": "The Bear (Masha and the Bear)", "ru": "Медведь" },
+        { "en": "Piglet (Pyatachok)", "ru": "Пятачок" },
+        { "en": "Leopold the Cat", "ru": "Кот Леопольд" },
+        { "en": "Luntik", "ru": "Лунтик" },
+        { "en": "The Wolf (Nu, Pogodi!)", "ru": "Волк («Ну, погоди!»)" },
+        { "en": "The Hare (Nu, Pogodi!)", "ru": "Заяц («Ну, погоди!»)" },
+        { "en": "Shapoklyak", "ru": "Шапокляк" },
+        { "en": "Kesha the Parrot", "ru": "Попугай Кеша" },
+        { "en": "Gena the Crocodile", "ru": "Крокодил Гена" },
+        { "en": "Buratino", "ru": "Буратино" }
+      ]
+    },
+    {
       "id": "games",
       "name": "🎮 Игры (Games)",
       "characters": [
@@ -175,6 +209,18 @@
         { "en": "Pikachu", "ru": "Пикачу" },
         { "en": "Steve (Minecraft)", "ru": "Стив (Minecraft)" },
         { "en": "Pac-Man", "ru": "Пакман" }
+      ]
+    },
+    {
+      "id": "series",
+      "name": "📺 Сериалы (TV Series)",
+      "characters": [
+        { "en": "Sheldon Cooper", "ru": "Шелдон Купер" },
+        { "en": "Joey Tribbiani", "ru": "Джоуи Триббиани" },
+        { "en": "Rachel Green", "ru": "Рэйчел Грин" },
+        { "en": "Chandler Bing", "ru": "Чендлер Бинг" },
+        { "en": "Walter White", "ru": "Уолтер Уайт" },
+        { "en": "Jesse Pinkman", "ru": "Джесси Пинкман" }
       ]
     },
     {
@@ -210,7 +256,12 @@
         { "en": "Mahatma Gandhi", "ru": "Махатма Ганди" },
         { "en": "Nelson Mandela", "ru": "Нельсон Мандела" },
         { "en": "Martin Luther King", "ru": "Мартин Лютер Кинг" },
-        { "en": "Joan of Arc", "ru": "Жанна д'Арк" }
+        { "en": "Joan of Arc", "ru": "Жанна д'Арк" },
+        { "en": "Yuri Gagarin", "ru": "Юрий Гагарин" },
+        { "en": "William Shakespeare", "ru": "Уильям Шекспир" },
+        { "en": "Wolfgang Amadeus Mozart", "ru": "Вольфганг Амадей Моцарт" },
+        { "en": "Ludwig van Beethoven", "ru": "Людвиг ван Бетховен" },
+        { "en": "Elizabeth II", "ru": "Елизавета II" }
       ]
     },
     {
@@ -246,7 +297,15 @@
         { "en": "Justin Bieber", "ru": "Джастин Бибер" },
         { "en": "Ed Sheeran", "ru": "Эд Ширан" },
         { "en": "Kim Kardashian", "ru": "Ким Кардашьян" },
-        { "en": "Oprah Winfrey", "ru": "Опра Уинфри" }
+        { "en": "Oprah Winfrey", "ru": "Опра Уинфри" },
+        { "en": "MrBeast", "ru": "MrBeast" },
+        { "en": "Gordon Ramsay", "ru": "Гордон Рамзи" },
+        { "en": "Selena Gomez", "ru": "Селена Гомес" },
+        { "en": "Tom Holland", "ru": "Том Холланд" },
+        { "en": "Jim Carrey", "ru": "Джим Керри" },
+        { "en": "Morgan Freeman", "ru": "Морган Фримен" },
+        { "en": "Robert Downey Jr.", "ru": "Роберт Дауни — младший" },
+        { "en": "Will Smith", "ru": "Уилл Смит" }
       ]
     },
     {
@@ -267,7 +326,11 @@
         { "en": "Pavel Volya", "ru": "Павел Воля" },
         { "en": "Dmitry Nagiev", "ru": "Дмитрий Нагиев" },
         { "en": "Konstantin Khabensky", "ru": "Константин Хабенский" },
-        { "en": "Mikhail Galustyan", "ru": "Михаил Галустян" }
+        { "en": "Mikhail Galustyan", "ru": "Михаил Галустян" },
+        { "en": "Timati", "ru": "Тимати" },
+        { "en": "Sergey Zhukov", "ru": "Сергей Жуков" },
+        { "en": "Yuri Nikulin", "ru": "Юрий Никулин" },
+        { "en": "Sergey Lazarev", "ru": "Сергей Лазарев" }
       ]
     },
     {
@@ -301,7 +364,6 @@
         { "en": "Frodo Baggins", "ru": "Фродо Бэггинс" },
         { "en": "Dumbledore", "ru": "Дамблдор" },
         { "en": "Voldemort", "ru": "Волан-де-Морт" },
-        { "en": "Mickey Mouse", "ru": "Микки Маус" },
         { "en": "Homer Simpson", "ru": "Гомер Симпсон" },
         { "en": "Luigi", "ru": "Луиджи" },
         { "en": "Sonic the Hedgehog", "ru": "Ёжик Соник" },
@@ -310,12 +372,9 @@
         { "en": "Lara Croft", "ru": "Лара Крофт" },
         { "en": "Link", "ru": "Линк" },
         { "en": "Daenerys Targaryen", "ru": "Дейенерис Таргариен" },
-        { "en": "Walter White", "ru": "Уолтер Уайт" },
         { "en": "Forrest Gump", "ru": "Форрест Гамп" },
-        { "en": "Winnie the Pooh", "ru": "Винни-Пух" },
         { "en": "Muhammad Ali", "ru": "Мохаммед Али" },
         { "en": "Marie Curie", "ru": "Мария Кюри" },
-        { "en": "William Shakespeare", "ru": "Уильям Шекспир" },
         { "en": "Bob Marley", "ru": "Боб Марли" }
       ]
     }
