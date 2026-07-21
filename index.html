@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ff6b6b" />
+  <title>Spy Card Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- ===================== HOME / LOBBY ===================== -->
+    <section id="screen-home" class="screen active">
+      <div class="card-panel">
+        <div class="logo">
+          <span class="logo-emoji">🕵️</span>
+          <h1>Spy Card Game</h1>
+          <p class="tagline">Find the spies hiding among you.</p>
+        </div>
+
+        <div class="field">
+          <label for="playerCount">How many players?</label>
+          <div class="stepper">
+            <button type="button" id="minusBtn" class="step-btn" aria-label="Fewer players">−</button>
+            <input id="playerCount" type="number" min="3" max="20" value="5" inputmode="numeric" />
+            <button type="button" id="plusBtn" class="step-btn" aria-label="More players">+</button>
+          </div>
+          <p class="hint">Best with 3–12+ players. Pass one phone around.</p>
+        </div>
+
+        <button id="startBtn" class="primary-btn">Start Game</button>
+
+        <button id="howToBtn" class="link-btn">How to play</button>
+      </div>
+    </section>
+
+    <!-- ===================== REVEAL ===================== -->
+    <section id="screen-reveal" class="screen">
+      <div class="reveal-wrap">
+        <p class="pass-label" id="passLabel">Pass the phone to Player 1</p>
+
+        <div id="flipCard" class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-back">
+              <span class="tap-emoji">👆</span>
+              <span class="tap-text">Tap to reveal</span>
+            </div>
+            <div class="flip-face flip-front">
+              <span id="roleText" class="role-text">SPY</span>
+              <span id="roleSub" class="role-sub"></span>
+            </div>
+          </div>
+        </div>
+
+        <button id="revealActionBtn" class="primary-btn">Reveal Card</button>
+        <p class="progress" id="revealProgress">Player 1 of 5</p>
+      </div>
+    </section>
+
+    <!-- ===================== DISCUSSION ===================== -->
+    <section id="screen-discuss" class="screen">
+      <div class="card-panel discuss-panel">
+        <span class="discuss-emoji">💬</span>
+        <h2>Everyone has seen their role.</h2>
+        <p class="discuss-text">Start discussing! Ask each other questions about the character. Spies — blend in. Everyone else — expose the spies.</p>
+        <button id="newRoundBtn" class="primary-btn">New Round</button>
+        <button id="homeBtn" class="link-btn">Change player count</button>
+      </div>
+    </section>
+
+    <!-- ===================== HOW TO PLAY (modal) ===================== -->
+    <div id="howToModal" class="modal-overlay">
+      <div class="modal">
+        <h3>How to play</h3>
+        <ol>
+          <li>Pick the number of players and tap <strong>Start Game</strong>.</li>
+          <li>The game secretly picks one famous character. Most players get that character — some randomly become a <strong>SPY</strong>.</li>
+          <li>Pass the phone around. Each player privately reveals their card, then hides it.</li>
+          <li>Spies only see the word <strong>SPY</strong> — they don't know the character!</li>
+          <li>Discuss and ask questions to find the spies. Spies try to blend in.</li>
+        </ol>
+        <p class="modal-note">There's no fixed number of spies — a round might have none, one, or many. Every player has a 30% chance of being a spy.</p>
+        <button id="closeModalBtn" class="primary-btn">Got it</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="characters.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

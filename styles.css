@@ -1,0 +1,274 @@
+:root {
+  --coral: #ff6b6b;
+  --coral-dark: #ee5a5a;
+  --yellow: #ffd93d;
+  --teal: #4ecdc4;
+  --purple: #a06cd5;
+  --ink: #2d2a4a;
+  --paper: #fff9f0;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(45, 42, 74, 0.18);
+  --shadow-sm: 0 4px 14px rgba(45, 42, 74, 0.14);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #ffe3a3 0%, transparent 55%),
+    radial-gradient(1000px 600px at 110% 10%, #b0f0ea 0%, transparent 55%),
+    linear-gradient(160deg, #ffb4a2 0%, #ffcb77 40%, #7bdff2 100%);
+  background-attachment: fixed;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app { width: 100%; max-width: 440px; }
+
+/* ---------- Screens ---------- */
+.screen { display: none; animation: fadeIn 0.3s ease both; }
+.screen.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Panels ---------- */
+.card-panel {
+  background: var(--paper);
+  border-radius: 28px;
+  padding: 32px 26px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* ---------- Logo / heading ---------- */
+.logo { margin-bottom: 26px; }
+.logo-emoji { font-size: 58px; display: block; line-height: 1; margin-bottom: 6px; }
+h1 {
+  font-family: "Baloo 2", cursive;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--coral);
+  letter-spacing: 0.5px;
+}
+.tagline { color: #7a7690; font-weight: 700; margin-top: 4px; }
+
+/* ---------- Form ---------- */
+.field { margin-bottom: 22px; }
+label {
+  display: block;
+  font-family: "Baloo 2", cursive;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.step-btn {
+  width: 54px; height: 54px;
+  border: none;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+.step-btn:active { transform: scale(0.9); filter: brightness(0.95); }
+#playerCount {
+  width: 92px;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--ink);
+  border: 3px solid #ffe0b8;
+  border-radius: 18px;
+  background: var(--white);
+  padding: 6px 0;
+  -moz-appearance: textfield;
+}
+#playerCount::-webkit-outer-spin-button,
+#playerCount::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.hint { color: #948fac; font-size: 13px; margin-top: 12px; font-weight: 700; }
+
+/* ---------- Buttons ---------- */
+.primary-btn {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  background: var(--coral);
+  color: var(--white);
+  font-family: "Baloo 2", cursive;
+  font-size: 21px;
+  font-weight: 800;
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--coral-dark);
+  transition: transform 0.06s ease, box-shadow 0.06s ease;
+}
+.primary-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--coral-dark);
+}
+.link-btn {
+  margin-top: 14px;
+  background: none;
+  border: none;
+  color: #7a7690;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ---------- Reveal ---------- */
+.reveal-wrap { text-align: center; }
+.pass-label {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 14px 18px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.flip-card {
+  perspective: 1200px;
+  width: 100%;
+  height: 360px;
+  margin-bottom: 22px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+.flip-back {
+  background: repeating-linear-gradient(45deg, var(--purple) 0 22px, #8f5bc9 22px 44px);
+  color: var(--white);
+}
+.tap-emoji { font-size: 60px; margin-bottom: 10px; }
+.tap-text {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  font-weight: 800;
+}
+.flip-front {
+  transform: rotateY(180deg);
+  background: linear-gradient(160deg, var(--yellow), #ffc93c);
+  color: var(--ink);
+  text-align: center;
+}
+.flip-card.is-spy .flip-front {
+  background: linear-gradient(160deg, #2d2a4a, #4a3f6b);
+  color: var(--yellow);
+}
+.role-text {
+  font-family: "Baloo 2", cursive;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.flip-card.is-spy .role-text { font-size: 64px; letter-spacing: 3px; }
+.role-sub {
+  margin-top: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  opacity: 0.85;
+  max-width: 240px;
+}
+.progress { color: #6a6684; font-weight: 800; margin-top: 4px; }
+
+/* ---------- Discussion ---------- */
+.discuss-panel { padding-top: 40px; padding-bottom: 40px; }
+.discuss-emoji { font-size: 64px; display: block; margin-bottom: 10px; }
+h2 {
+  font-family: "Baloo 2", cursive;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+.discuss-text { color: #5f5b7a; font-weight: 700; line-height: 1.5; margin-bottom: 26px; }
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 42, 74, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--paper);
+  border-radius: 24px;
+  padding: 28px 24px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+.modal h3 {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  color: var(--coral);
+  margin-bottom: 14px;
+  text-align: center;
+}
+.modal ol { padding-left: 20px; }
+.modal li { margin-bottom: 10px; font-weight: 700; line-height: 1.45; color: #4a4665; }
+.modal-note {
+  margin: 16px 0 20px;
+  font-weight: 700;
+  color: #7a7690;
+  background: #fff0d6;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+@media (max-width: 380px) {
+  h1 { font-size: 30px; }
+  .flip-card { height: 320px; }
+}
